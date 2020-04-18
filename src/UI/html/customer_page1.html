@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="../css/customer.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Customer page 1</title>
+    </head>
+    <body>
+        <div class="brdr">
+            <div class = "searchbg" >
+                <br>
+                <input class="search" type="text" placeholder="Search...">
+            </div>
+<div>
+<div id="HASH" class="blue-msg">
+<span id="time-HASH" class="smalltext"> <b style="font-size: 3em">&ensp;MENU</b></span>
+<span class="ios-circle"> <b class="y" style="font-size: 3em"  >&ensp;VEG</b>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round "></span>
+</label></span>
+
+</div>
+
+</div>
+
+<div>
+                <p style="margin-left: 4em;">
+           <table>
+                <tr>
+                <button class="collapsible">ID1</button>
+                <div class="content">
+                    <p>
+                        <h3>yes</h3>
+                       
+                    </p>
+                </div>
+                </tr>
+                 <tr>
+                <button class="collapsible">ID2</button>
+                <div class="content">
+                    <p>
+                         
+                    </p>
+                </div>
+                </tr>
+                 <tr>
+                <button class="collapsible">ID3</button>
+                <div class="content">
+                    <p>
+                         
+                    </p>
+                </div>
+                </tr>
+                 <tr>
+                <button class="collapsible">ID4</button>
+                <div class="content">
+                    <p>
+                        
+                    </p>
+                </div>
+                </tr>
+            </table>
+            </div>
+<script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+</script>
+                
+</div>
+        
+    </body>
+</html>
+

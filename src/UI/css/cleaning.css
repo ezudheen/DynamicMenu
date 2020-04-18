@@ -1,0 +1,67 @@
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 16px;
+    border: solid;
+    width: 90%;
+    text-align: left;
+    font-weight: bold;
+}
+.search{
+    margin-left:7em;
+    font-size: 16px;
+    padding: 10px;
+    width: 50em;
+    border: none;
+
+}
+::placeholder{
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+.roundbtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    font-weight: none;
+    float: right;
+}
+.searchbg {
+    background-color:lightgrey;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+.list{
+    padding-left: 50px;
+    padding-right: 200px;
+}
+.active, .dropbtn:hover {
+    background-color: lightgray;
+}
+.dropbtn:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    padding: 2px;
+    padding-left: 16px;
+    width: 60em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}

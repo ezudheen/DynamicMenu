@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/manager.css">
+    </head>
+    <body>
+        <h1 class="title">Manager Home</h1>
+        <button id="goto">Go To Stocks</button>
+        <div class="list">
+           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Transaction Details</h2> 
+            <table>
+                <tr>
+                <button class="collapsible">ID1</button>
+                <div class="content">
+                    <p>
+                        <h3>Food Rating</h3>
+                        Food lacked the flair we were promised.The ambience was good. 
+                    </p>
+                </div>
+                </tr>
+                 <tr>
+                <button class="collapsible">ID2</button>
+                <div class="content">
+                    <p>
+                         
+                    </p>
+                </div>
+                </tr>
+                 <tr>
+                <button class="collapsible">ID3</button>
+                <div class="content">
+                    <p>
+                         
+                    </p>
+                </div>
+                </tr>
+                 <tr>
+                <button class="collapsible">ID4</button>
+                <div class="content">
+                    <p>
+                        
+                    </p>
+                </div>
+                </tr>
+            </table>
+            </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            document.getElementById("goto").onclick = function () {
+            location.href = "managerstock.html";
+             };
+            </script>
+    </body>
+</html>

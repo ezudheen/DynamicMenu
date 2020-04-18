@@ -1,15 +1,67 @@
-View ongoing orders
-
-Modify payment status
-
-Generate payment reciept
-
-Print reciept
-
-Create cleaning request
-
-Add printer
-
-Change printer
-
-View printing status
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/accountant.css">
+    </head>
+    <body>
+        <div class="brdr">
+            <div class = "searchbg" >
+                <br>
+                <input class="search" type="text" placeholder="Search...">
+            </div>
+            <div class="list">
+                <b style="font-size: 3em" >Payment Summary</b><br><br>
+                <table>
+                <tr>
+                    <button class="roundbtn">+</button>
+                    <button class="roundbtn">x</button>
+                    <button class="dropbtn">List Item</button>
+                    <div class = "content">
+                        <p>
+                            <h3>Order No: 325940</h3>
+                            <h3>Order Time: 11:03 am</h3>
+                            <button>Go to Payment</button>
+                        </p>   
+                    </div>
+                </tr>
+                <tr>
+                    <button class="roundbtn">+</button>
+                    <button class="roundbtn">x</button>
+                    <button class="dropbtn">List Item</button>
+                    <div class = "content">
+                        <p>
+                       
+                        </p>
+                    </div> 
+                </tr>
+                <tr>
+                    <button class="roundbtn">+</button>
+                    <button class="roundbtn">x</button>
+                    <button class="dropbtn">List Item</button>
+                    <div class = "content">
+                        <p>
+                       
+                        </p>
+                    </div>  
+                </tr>
+            </table>
+            </div>
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("dropbtn");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                      content.style.maxHeight = null;
+                    } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                  });
+                }
+            </script>
+    </body>
+</html>

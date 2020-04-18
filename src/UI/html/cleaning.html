@@ -1,3 +1,61 @@
-Display cleaning jobs
-
-Update status of cleaning jobs
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/cleaning.css">
+    </head>
+    <body>
+        <div>
+            <div class="list">
+                <b style="font-size: 3em" >Current tables to clean</b><br><br>
+                <table>
+                <tr>
+                    <button class="roundbtn">+</button>
+                    <button class="roundbtn">x</button>
+                    <button class="dropbtn">List Item</button>
+                    <div class = "content">
+                        <p>
+                            content
+                        </p>   
+                    </div>
+                </tr>
+                <tr>
+                    <button class="roundbtn">+</button>
+                    <button class="roundbtn">x</button>
+                    <button class="dropbtn">List Item</button>
+                    <div class = "content">
+                        <p>
+                       
+                        </p>
+                    </div> 
+                </tr>
+                <tr>
+                    <button class="roundbtn">+</button>
+                    <button class="roundbtn">x</button>
+                    <button class="dropbtn">List Item</button>
+                    <div class = "content">
+                        <p>
+                       
+                        </p>
+                    </div>  
+                </tr>
+            </table>
+            </div>
+            </div>
+            <script>
+                var coll = document.getElementsByClassName("dropbtn");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                      content.style.maxHeight = null;
+                    } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                  });
+                }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/manager.css">
+    </head>
+    <body>
+        <h1 class="title">Manager Stock</h1>
+        <button id="goto">Go To Home</button>
+        <div class="list">
+           <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Current Stock</h2> 
+           <table>
+                <tr>
+                <button id="update">Update Stocks</button> 
+                <button class="collapsible" id="abc">List Item</button>
+                <div class="content">
+                    <p>
+                        Stock Remaining :  XXXX
+                    </p>
+                </div>
+                </tr>
+                <tr>
+                <button id="update">Update Stocks</button>
+                <button class="collapsible">List Item</button>
+                <div class="content">
+                    <p>
+                        Stock Remaining :  XXXX
+                    </p>
+                </div>
+                </tr>
+                <tr>
+               <button id="update">Update Stocks</button>
+                <button class="collapsible">List Item</button>
+                <div class="content">
+                    <p>
+                        Stock Remaining :  XXXX
+                    </p>
+                </div>
+                </tr>
+                <tr>
+                <button id="update">Update Stocks</button>     
+                <button class="collapsible">List Item</button>
+                <div class="content">
+                    <p>
+                        Stock Remaining :  XXXX
+                    </p>
+                </div>
+                </tr>
+            </table>
+            </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            document.getElementById("goto").onclick = function () {
+            location.href = "managerhome.html";
+             };
+            </script>
+    </body>
+</html>
