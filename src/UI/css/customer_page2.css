@@ -1,0 +1,69 @@
+
+          body{
+            background-color: white;
+            border: 4px solid  rgb(0, 110, 255);
+            padding: 0px;
+          }
+          .search{
+            margin-left:7em;
+            font-size: 16px;
+            padding: 10px;
+            width: 50em;
+            border: none;
+          }
+          .div{
+            background-color:lightgrey;
+            padding: 10px;
+            padding-bottom: 25px;
+            }
+            .show {display: block;}
+               ::placeholder{
+                            font-size: medium;
+                            font-weight: bold;
+                            color: black;
+                        }
+                        .div1 {
+                            background-color:lightgrey;
+                            padding: 10px;
+                            padding-bottom: 25px;
+                        }
+            .lhalf{
+              position: absolute;
+              width: 50%;
+              left: 0px;
+            }
+            .rhalf{
+              position: absolute;
+              width: 50%;
+              right: 0px;
+            }
+            .btn{
+              border-color: black;
+              width: 200px;
+              height: 45px;
+              background-color: white;
+              border-radius: 5px;
+              margin: 20px;
+              margin-left: 25%;
+
+            }
+            .descptn{
+              width: 250px;
+              height: 45px;
+              background-color: lightgrey;
+              margin: 20px;
+              margin-left: 22%;
+              margin-top: 40px;
+              margin-bottom: 40px;
+              text-align: center;
+            }
+            #drtn{
+              margin-top: 100px;
+              margin-left: auto;
+            }
+            .photo{
+              height: 450px;
+              width: 340px;
+              margin-left: 50px;
+              margin-top: 15px;
+            }
