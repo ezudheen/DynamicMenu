@@ -1,0 +1,21 @@
+## print API
+
+## view available printers
+ printer.list() //gets the list of all available printers
+
+##create a printing job 
+ arguments: The table containing the ordered items and the cash needed to pay 
+ return: Job ID   
+
+##send a printing job to the printer 
+ arguments: printer ID
+	    Bill details
+	    The table containing the ordered items and the cash needed to pay
+ return: Prints the bill
+
+##view job queue status of a printer
+ Create a job queue 
+ arguments: Job ID
+	    Printer ID
+	    Return value from the printing job function
+ return: Job ID
