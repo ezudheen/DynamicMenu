@@ -1,0 +1,39 @@
+## Operation to manipulate socket
+
+## functions are:
+
+	##create a socket
+
+	##delete a socket
+
+	## listen to a socket
+
+	## read from a socket
+
+	## write into a set of socket
+
+##create a socket
+
+  #arguments: null
+
+  #return value:boolean value
+
+##delete a socket
+
+  #argument:socket to be delete
+
+  #return value:: boolean value. either true or false
+
+## listen to a socket
+
+## read from a socket
+
+   #arguments:a key which represent the xml file to read
+
+   #return value: boolean value
+
+## write into a set of socket
+
+   #arguments:xml file
+
+   #return value:boolean value to represent succefully ritten or not,either true or false
