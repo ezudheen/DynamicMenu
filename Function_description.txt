@@ -1,0 +1,15 @@
+## User Authentication 
+	#Arguments: User ID, Password, Details Table
+	#return: boolean value
+
+## User Creation
+	#Arguments: Name, Password, Role, Details Table
+	#Return: User ID
+
+##User Deletion
+	#Arguments: User ID, Password, Details Table
+	#Return: boolean value
+
+##User Modification
+	#Arguments: User ID, Password, Details Table
+	#Return: Details Table
